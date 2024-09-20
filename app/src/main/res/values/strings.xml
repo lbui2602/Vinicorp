@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FresherVNC</string>
+    <string name="title_app_lucky_choice">Lựa chọn may mắn</string>
+    <string name="title_app_restaurant">Nhà hàng VNC</string>
+    <string name="even">Chẵn</string>
+    <string name="odd">Lẻ</string>
+    <string name="msg_lose">Bạn đã thua cược</string>
+    <string name="msg_win">Bạn đã thắng cược</string>
+    <string name="next">Chơi tiếp</string>
+    <string name="msg_choose_even_odd">Hãy chọn chẵn lẻ</string>
+    <string name="msg_type_bet">Hãy nhập số tiền</string>
+    <string name="play">Chơi ngay</string>
+    <string name="msg_bet_too_big">Số tiền cược quá lớn</string>
+    <string name="type_bet">Nhập số tiền cược</string>
+    <string name="sum_money">Tổng số tiền: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,156 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".restaurant.ui.UpdateRestaurantActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.7"
+            android:weightSum="10"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:text="Tuy chinh nha hang" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.7">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:background="@drawable/bg_title"
+                        android:layout_margin="5dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Quan ly so ban an"
+                            android:textColor="@color/white"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/llAddTable"
+                            android:layout_width="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/circle_button_green"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:text="+"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/rcvTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:background="@drawable/bg_title"
+                        android:layout_margin="5dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Quan ly so ban an"
+                            android:textColor="@color/white"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/llAddFood"
+                            android:layout_width="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/circle_button_green"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:text="+"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".luckychoice.LuckyChoiceActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_app_lucky_choice"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:weightSum="7"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/llEven"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:visibility="gone"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/imgContent"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_heads_tails"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llOdd"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_margin="20dp"
+                android:text="@string/even"
+                android:id="@+id/btnEven"
+                android:layout_width="0dp"
+                android:background="@drawable/bg_button"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="@string/odd"
+                android:id="@+id/btnOdd"
+                android:layout_width="0dp"
+                android:background="@drawable/bg_button"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="@string/play"
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtMoney"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:maxLength="9"
+                android:inputType="number"
+                android:hint="@string/type_bet"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="0dp"
+                android:text="@string/sum_money"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
